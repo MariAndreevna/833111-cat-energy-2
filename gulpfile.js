@@ -198,6 +198,7 @@ export function runDev (done) {
   series(
     removeBuild,
     parallel(
+      copyStatic,
       processMarkup,
       processStyles,
       processScripts,
