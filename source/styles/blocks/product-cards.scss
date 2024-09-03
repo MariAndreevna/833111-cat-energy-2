@@ -3,14 +3,13 @@
 }
 
 .product-cards__title {
-  font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
 }
 
 .product-cards__description {
-  font-family: $secondary-font;
+  font-size: 16px;
   line-height: 20px;
   color: #222222;
   font-weight: 400;
@@ -19,6 +18,7 @@
 
 .product-cards__parameter,
 .product-cards__value {
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   color: #444444;

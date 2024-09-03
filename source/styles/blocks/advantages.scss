@@ -1,16 +1,16 @@
 .advantages__title {
-  font-family: $secondary-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
 }
 
 .advantages__list {
+  font-family: $secondary-font;
   list-style: none;
 }
 
 .advantages__item {
-  font-family: $primary-font;
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
