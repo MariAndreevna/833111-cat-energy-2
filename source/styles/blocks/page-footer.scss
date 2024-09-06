@@ -4,3 +4,31 @@
   color: #444444;
   text-decoration: none;
 }
+
+.page-footer__social {
+  list-style: none;
+}
+
+.social__link {
+  display: inline-block;
+  width: 28px;
+  height: 22px;
+
+  &--vk {
+    background-color: #666666;
+    mask-image: url("../../icons/vkontakte.svg");
+    mask-size: 28px 22px;
+  }
+
+  &--youtube {
+
+  }
+
+  &--telegram {
+
+  }
+
+  &:hover {
+    background-color: #68b738;
+  }
+}

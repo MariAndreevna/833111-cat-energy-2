@@ -1,5 +1,59 @@
 .diet-plans__list {
   list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.diet-plans__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  background-color: $basic-grey;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .diet-plans__item {
+    &::before {
+      content: "";
+      width: 200px;
+      height: 200px;
+      background-color: $basic-green;
+      border-radius: 50%;
+      background-size: contain;
+      background-position: center;
+      display: inline-block;
+      margin-left: auto;
+    }
+
+    &::after {
+      content: "";
+      background-size: contain;
+      background-position: center;
+      display: inline-block;
+      position: absolute;
+      background-repeat: no-repeat;
+      flex-shrink: 0;
+    }
+
+    &--slim::after {
+      background-image: url("../../icons/cat-slim-tablet.svg");
+      width: 140px;
+      height: 194px;
+      left: 8px;
+      bottom: 4px;
+    }
+
+    &--pro::after {
+      background-image: url("../../icons/cat-pro-tablet.svg");
+      width: 268px;
+      height: 112px;
+      left: -8px;
+    }
+  }
 }
 
 .diet-plans__title {
@@ -49,26 +103,43 @@
     height: 28px;
     left: -8px;
   }
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .diet-plans__title {
     font-size: 36px;
     line-height: 36px;
+
+    &::before,
+    &::after {
+      content: none;
+    }
   }
 }
 
-.diet-plans__item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-direction: column;
+@media (min-width: $desktop-width) {
+  .diet-plans__title {
+    gap: 62px;
 
-  @media (min-width: $tablet-width) {
+    &::before {
+      width: 100px;
+      height: 100px;
+    }
 
-  }
+    &--slim::after {
+      background-image: url("../../icons/cat-slim-desktop.svg");
+      width: 70px;
+      height: 97px;
+      left: 8px;
+      bottom: 4px;
+    }
 
-  @media (min-width: $tablet-width) {
-
+    &--pro::after {
+      background-image: url("../../icons/cat-pro-desktop.svg");
+      width: 134px;
+      height: 56px;
+      left: -17px;
+    }
   }
 }
 
@@ -77,11 +148,36 @@
   color: #444444;
   font-size: 14px;
   line-height: 18px;
+  margin: 0 auto 0 0;
 }
 
 .diet-plans__link {
+  display: flex;
+  align-items: center;
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
+  margin: 0 auto 0 0;
+  gap: 15px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 10px;
+    background-image: url("../../icons/icon_arrow.svg");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
