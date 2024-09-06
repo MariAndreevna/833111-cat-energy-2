@@ -14,4 +14,40 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  padding-right: 20px;
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    background-size: 30px 32px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
+
+    &--leaf {
+      background-image: url("../../icons/icon_leaf.svg");
+    }
+
+    &--cup {
+      background-image: url("../../icons/icon_cup.svg");
+    }
+
+    &--eat {
+      background-image: url("../../icons/icon_eat.svg");
+    }
+
+    &--clock {
+      background-image: url("../../icons/icon_clock.svg");
+    }
+  }
 }
