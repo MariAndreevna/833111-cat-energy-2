@@ -52,8 +52,8 @@
         <h1 class="advertising__title">Функциональное питание для котов</h1>
         <p class="advertising__description">Занялся собой? Займись котом!</p>
         <picture>
-          <source width="709" height="609" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-          <source width="552" height="499" type="image/png" media="(min-width: 768px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+          <source width="709" height="609" type="image/png" media="(min-width: 768px) and (max-width: 1439px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+          <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
           <img class="advertising__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания Cat Energy">
         </picture>
         <a class="advertising__link button" href="#">Подобрать программу</a>
@@ -68,14 +68,18 @@
       <h2 class="visually-hidden">Подбор программы питания</h2>
       <ul class="diet-plans__list">
         <li class="diet-plans__item diet-plans__item--slim">
-          <h3 class="diet-plans__title diet-plans__title--slim">Похудение</h3>
-          <p class="diet-plans__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="diet-plans__link" href="catalog.html">Каталог Slim</a>
+          <div class="diet-plans__container">
+            <h3 class="diet-plans__title diet-plans__title--slim">Похудение</h3>
+            <p class="diet-plans__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a class="diet-plans__link" href="catalog.html">Каталог Slim</a>
+          </div>
         </li>
         <li class="diet-plans__item diet-plans__item--pro">
-          <h3 class="diet-plans__title diet-plans__title--pro">Набор массы</h3>
-          <p class="diet-plans__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="diet-plans__link" href="catalog.html">Каталог PRO</a>
+          <div class="diet-plans__container">
+            <h3 class="diet-plans__title diet-plans__title--pro">Набор массы</h3>
+            <p class="diet-plans__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a class="diet-plans__link" href="catalog.html">Каталог PRO</a>
+          </div>
         </li>
       </ul>
     </section>
@@ -168,7 +172,12 @@
     </ul>
 
     <div class="page-footer__partner">
-      <a class="page-footer__partner-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="page-footer__partner-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__partner-title">HTML Academy</span>
+        <svg aria-label="Логотип HTML академии" width="27" height="34" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="m13.64.52-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="currentColor" />
+        </svg>
+      </a>
     </div>
   </footer>
 

@@ -3,8 +3,6 @@
 }
 
 .main-header__nav-list {
-  font-size: 20px;
-  line-height: 20px;
   list-style: none;
 }
 
@@ -12,4 +10,17 @@
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
