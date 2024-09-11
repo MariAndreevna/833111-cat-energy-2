@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin: 0;
 }
 
 .diet-plans__item {
@@ -12,19 +13,13 @@
   align-items: center;
   gap: 20px;
   flex-direction: column;
-  background-color: $basic-grey;
+  padding: 0 20px;
 
-  &--slim {
-    padding: 21px 20px 18px;
+  &:last-child {
+    padding-bottom: 20px;
   }
 
-  &--pro {
-    padding: 24px 20px 18px;
-  }
-}
-
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .diet-plans__item {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     flex-direction: row-reverse;
 
     &::before {
@@ -69,6 +64,10 @@
   }
 }
 
+.diet-plans__container {
+  background-color: $basic-grey;
+}
+
 .diet-plans__title {
   font-size: 24px;
   line-height: 37px;
@@ -77,9 +76,8 @@
   display: flex;
   gap: 20px;
   align-items: center;
-  margin: 0 auto 22px 0;
+  margin: 21px 0 29px 20px;
   position: relative;
-
 
   &::before {
     content: "";
@@ -117,10 +115,8 @@
     height: 28px;
     left: -8px;
   }
-}
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
-  .diet-plans__title {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     margin: 0 auto 24px 0;
     font-size: 36px;
     line-height: 36px;
@@ -130,10 +126,8 @@
       content: none;
     }
   }
-}
 
-@media (min-width: $desktop-width) {
-  .diet-plans__title {
+  @media (min-width: $desktop-width) {
     gap: 62px;
     margin: 0 auto 39px 0;
 
@@ -159,12 +153,13 @@
   }
 }
 
+
 .diet-plans__description {
   font-family: $secondary-font;
-  color: #444444;
+  color: $special_dark-grey;
   font-size: 14px;
   line-height: 18px;
-  margin: 0 auto 38px 0;
+  margin: 0 33px 38px 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 48px 0;
@@ -182,7 +177,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
-  margin: 0 auto 0 0;
+  margin: 0 20px 22px;
   gap: 15px;
 
   &:active {

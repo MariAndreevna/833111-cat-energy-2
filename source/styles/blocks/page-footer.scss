@@ -1,5 +1,26 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.page-footer__logo {
+  width: 128px;
+  height: 24px;
+  display: block;
+  padding: 0 20px;
+}
+
 .page-footer__social {
   list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  margin: 0;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  width: calc(50% - 28px);
 }
 
 .social__link {
@@ -39,11 +60,12 @@
 .page-footer__partner-link {
   font-family: $secondary-font;
   line-height: 20px;
-  color: #444444;
+  color: $special_dark-grey;
   text-decoration: none;
   display: flex;
   align-items: center;
   gap: 140px;
+  margin-bottom: 40px;
 
   svg {
     color: #666666;

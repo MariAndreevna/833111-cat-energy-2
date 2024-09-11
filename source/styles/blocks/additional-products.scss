@@ -9,7 +9,7 @@
 
 .additional-products__promo {
   font-family: $secondary-font;
-  background-color: #68b738;
+  background-color: $basic-green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +30,7 @@
 .additional-products__promo-description {
   font-family: $secondary-font;
   line-height: 20px;
-  color: #ffffff;
+  color: $basic-white;
   margin: 0;
   text-align: center;
 }
