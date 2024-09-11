@@ -1,11 +1,15 @@
-.product-cards__link {
-  text-decoration: none;
+.product-cards {
+  padding: 0 20px;
 }
 
 .product-cards__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+}
+
+.product-cards__link {
+  text-decoration: none;
 }
 
 .product-cards__description {
