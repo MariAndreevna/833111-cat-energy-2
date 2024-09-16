@@ -1,11 +1,16 @@
 .product-cards {
-  padding: 0 20px;
+  padding: 0;
 }
 
 .product-cards__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 27px 0 41px;
+}
+
+.product-cards__list {
+  display: grid;
 }
 
 .product-cards__link {

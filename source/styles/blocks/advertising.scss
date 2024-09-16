@@ -1,11 +1,8 @@
 .advertising {
-  display: flex;
-  flex-direction: column;
   color: $basic-white;
-  align-items: center;
   text-align: center;
   background-color: $basic-green;
-  padding: 27px 20px 20px;
+  padding: 27px 0 20px;
 }
 
 .advertising__title {
@@ -38,13 +35,13 @@
   width: 280px;
   height: 270px;
   display: block;
-  margin-bottom: 3px;
+  margin: 0 auto 3px;
 }
 
 .advertising__link {
   padding: 10px 63px;
 
   &:not(:last-child) {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
   }
 }
