@@ -25,6 +25,11 @@
   &:active {
     opacity: 0.6;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 13px;
+  }
 }
 
 .main-header__logo {
@@ -35,7 +40,6 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 50px;
-    margin-right: 208px;
   }
 }
 
@@ -49,8 +53,12 @@
   transform: translate(-51%, -56%);
 
   @media (min-width: $tablet-width) {
-    left: 20%;
+    position: relative;
   }
+}
+
+.main-header__navigation {
+  margin-left: auto;
 }
 
 .main-header__toggle {
@@ -116,7 +124,6 @@
     display: none;
   }
 }
-
 
 .main-header__nav-list {
   display: none;
