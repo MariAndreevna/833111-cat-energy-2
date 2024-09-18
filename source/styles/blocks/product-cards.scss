@@ -60,10 +60,43 @@
 }
 
 .product-cards__image {
-  width: 68px;
-  height: 86px;
   display: block;
   margin: 10px auto;
+}
+
+.product-cards__image-chicken-500 {
+  width: 68px;
+  height: 86px;
+}
+
+.product-cards__image-chicken-1000 {
+  width: 84px;
+  height: 100px;
+}
+
+.product-cards__image-catalog-fish-500 {
+  width: 68px;
+  height: 78px;
+}
+
+.product-cards__image-catalog-fish-1000 {
+  width: 84px;
+  height: 100px;
+}
+
+.product-cards__image-catalog-buckwheat-500 {
+  width: 68px;
+  height: 78px;
+}
+
+.product-cards__image-catalog-buckwheat-1000 {
+  width: 84px;
+  height: 100px;
+}
+
+.product-cards__image-catalog-rice-500 {
+  width: 72px;
+  height: 84px;
 }
 
 .product-cards__link {
