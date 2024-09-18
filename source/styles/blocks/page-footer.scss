@@ -1,14 +1,19 @@
-.page-footer__logo {
+.page-footer {
+  margin-bottom: 40px;
+}
+
+.page-footer__container {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 40px;
 }
 
 .page-footer__logo-name {
   width: 128px;
   height: 100%;
   display: block;
-  margin: 0 0 40px;
 }
 
 .page-footer__partner {
@@ -16,12 +21,11 @@
   align-items: center;
   position: relative;
   width: 100%;
-  margin-bottom: 40px;
 }
 
 .page-footer__partner-link {
   font-family: $secondary-font;
-  line-height: 20px;
+  line-height: 34px;
   color: $special_dark-grey;
   text-decoration: none;
   display: inline-block;

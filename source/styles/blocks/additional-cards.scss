@@ -1,9 +1,23 @@
+.additional-cards {
+  padding: 13px 0 19px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
 .additional-cards__title {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   color: $special_dark-grey-2;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.additional-cards__characteristics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
 }
 
 .additional-cards__parameter,
@@ -12,4 +26,14 @@
   font-size: 14px;
   line-height: 14px;
   color: $special_dark-grey;
+  margin: 0;
+}
+
+.additional-cards__value {
+  margin-left: auto;
+}
+
+.additional-cards__button {
+  padding: 10px 0;
+  width: 100%;
 }
