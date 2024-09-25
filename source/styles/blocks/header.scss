@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .main-header__main-navigation {
@@ -29,7 +30,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     gap: 13px;
+    align-items: center;
   }
+}
+
+.main-header__navigation {
+  margin-left: auto;
+  margin-right: 6px;
 }
 
 .main-header__logo {
@@ -47,18 +54,13 @@
   width: 101px;
   height: 18px;
   display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-51%, -56%);
 
-  @media (min-width: $tablet-width) {
-    position: relative;
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -56%);
   }
-}
-
-.main-header__navigation {
-  margin-left: auto;
 }
 
 .main-header__toggle {
@@ -147,7 +149,7 @@
     justify-content: space-between;
     width: auto;
     padding: 0;
-    gap: 33px;
+    gap: 34px;
   }
 }
 
@@ -157,21 +159,11 @@
   font-size: 20px;
   line-height: 20px;
   text-align: center;
+  border-top: 1px solid #e6e6e6;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: #e6e6e6;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    top: 0;
-  }
 
   @media (min-width: $tablet-width) {
-    &::before {
-      content: none;
-    }
+    border-top: none;
   }
 }
 
@@ -202,7 +194,7 @@
     &[aria-current="page"]::after {
       content: "";
       position: absolute;
-      bottom: -9px;
+      bottom: -11px;
       left: 0;
       width: 100%;
       height: 2px;

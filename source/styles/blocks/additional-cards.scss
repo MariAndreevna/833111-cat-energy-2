@@ -3,6 +3,11 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
+  border-top: 1 solid $special_grey;
+
+  &:last-child {
+    border-bottom: 1 solid $special_grey;
+  }
 }
 
 .additional-cards__title {

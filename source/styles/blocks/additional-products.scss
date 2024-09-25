@@ -23,31 +23,6 @@
   display: grid;
 }
 
-.additional-products__item {
-  position: relative;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: $special_grey;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  &:last-of-type::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: $special_grey;
-    position: absolute;
-    top: 100%;
-    right: 0;
-  }
-}
 
 .additional-products__promo {
   font-family: $secondary-font;
