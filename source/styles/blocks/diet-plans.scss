@@ -1,5 +1,9 @@
 .diet-plans {
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .diet-plans__list {
@@ -26,7 +30,7 @@
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     flex-direction: row-reverse;
-    padding: 77px 63px 53px 53px;
+    padding: 78px 63px 56px 53px;
     gap: 53px;
 
     &::before {
@@ -40,6 +44,7 @@
       display: inline-block;
       margin-left: auto;
       flex-shrink: 0;
+      margin-bottom: 9px;
     }
 
     &::after {
@@ -55,8 +60,8 @@
       position: absolute;
       width: 140px;
       height: 194px;
-      top: 76px;
-      right: 80px;
+      top: 82px;
+      right: 93px;
     }
 
     &--pro::after {
@@ -65,7 +70,28 @@
       width: 268px;
       height: 112px;
       right: 29px;
+      top: 136px;
     }
+  }
+}
+
+.diet-plans__container {
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    &::before {
+      content: "";
+      background-color: #d9d9d9;
+      width: 100%;
+      height: 1px;
+      display: block;
+      position: absolute;
+      bottom: 52px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    content: none;
   }
 }
 
@@ -165,8 +191,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 auto 48px 0;
-    padding-right: 46px;
+    margin: 0 auto 52px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -204,5 +229,6 @@
     font-size: 20px;
     line-height: 30px;
     gap: 25px;
+    margin: 0;
   }
 }

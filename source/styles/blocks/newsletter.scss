@@ -3,6 +3,11 @@
   padding-top: 40px;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 80px;
+    padding-top: 80px;
+  }
 }
 
 .newsletter__title {
@@ -11,21 +16,50 @@
   margin: 0 0 32px;
   position: relative;
 
-  &::after {
+  &::after,
+  &::before {
     content: "";
     display: block;
-    width: 108px;
     height: 2px;
     background-color: $basic-green;
     position: absolute;
-    top: 10px;
-    right: -20px;
+    top: 50%;
+  }
+
+  @media (max-width: $tablet-width) {
+    &::after {
+      width: 108px;
+      right: -20px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0 0 66px 40px;
+
+    &::after {
+      width: 456px;
+      right: -30px;
+    }
+
+    &::before {
+      width: 30px;
+      left: -70px;
+    }
   }
 }
 
 .newsletter__description {
   text-align: center;
   margin: 0 0 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto 24px;
+    width: 632px;
+  }
 }
 
 .newsletter__form {

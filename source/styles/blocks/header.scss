@@ -12,7 +12,7 @@
   padding: 13px 20px 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 25px 30px;
+    padding: 25px 30px 65px;
   }
 }
 
@@ -36,7 +36,7 @@
 
 .main-header__navigation {
   margin-left: auto;
-  margin-right: 6px;
+  margin-right: 4px;
 }
 
 .main-header__logo {
@@ -64,7 +64,7 @@
 }
 
 .main-header__toggle {
-  @media (min-width: $mobile-width-only) and (max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
 
     width: 24px;
     height: 24px;

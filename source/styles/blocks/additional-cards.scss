@@ -8,6 +8,11 @@
   &:last-child {
     border-bottom: 1 solid $special_grey;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    flex-flow: row wrap;
+  }
 }
 
 .additional-cards__title {
@@ -17,12 +22,21 @@
   color: $special_dark-grey-2;
   text-transform: uppercase;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-cards__characteristics {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+  }
 }
 
 .additional-cards__parameter,
@@ -32,6 +46,11 @@
   line-height: 14px;
   color: $special_dark-grey;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-cards__value {

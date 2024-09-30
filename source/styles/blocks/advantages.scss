@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(249px, 1fr));
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 43px 56px;
+    grid-gap: 43px 60px;
     counter-reset: card-counter;
   }
 }
@@ -90,22 +90,7 @@
     z-index: 1;
     padding-top: 33px;
     padding-bottom: 57px;
-
-    &--leaf {
-      padding-right: 70px;
-    }
-
-    &--can {
-      padding-right: 50px;
-    }
-
-    &--eat {
-      padding-right: 70px;
-    }
-
-    &--clock {
-      padding-right: 4px;
-    }
+    padding-right: 70px;
 
 
     &::before {
@@ -121,23 +106,23 @@
       line-height: 280px;
       color: $basic-grey;
       z-index: -1;
-      top: -7px;
+      top: -6px;
     }
 
     &--leaf::after {
-      right: 104px;
+      right: 100px;
     }
 
     &--can::after {
-      right: 82px;
+      right: 79px;
     }
 
     &--eat::after {
-      right: 81px;
+      right: 77px;
     }
 
     &--clock::after {
-      right: 78px;
+      right: 75px;
     }
   }
 }

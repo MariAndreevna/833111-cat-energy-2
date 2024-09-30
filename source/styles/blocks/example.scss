@@ -41,14 +41,14 @@
 .example__results-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
-  margin: 0 0 34px;
+  gap: 20px 32px;
+  margin: 0 0 20px;
   justify-content: space-around;
 
   @media (min-width: $tablet-width) {
     gap: 43px;
     justify-content: flex-start;
-    margin: 0;
+    margin: 0 0 99px;
   }
 }
 
@@ -68,7 +68,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 2px;
+    padding: 17px 2px;
     width: 162px;
   }
 }
@@ -82,12 +82,22 @@
   display: block;
   padding: 0 12px;
   background-color: $dark-grey;
-  margin: -10px auto 0;
+  margin: -8px auto 0;
   width: 77px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background-color: $basic-white;
+    padding: 0;
+
+    &--weight {
+      width: 113px;
+    }
+
+    &--time {
+      width: 142px;
+    }
   }
 }
 
@@ -96,13 +106,17 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  margin: 14px 0 20px;
+  margin: 0;
+
+  & span {
+    display: inline-block;
+  }
 
   @media (min-width: $tablet-width) {
+    text-align: right;
+    width: 174px;
     font-size: 20px;
     line-height: 20px;
-    width: 174px;
-    text-align: right;
-    margin: -75px 0 116px auto;
+    margin: 10px 0 0 auto;
   }
 }
