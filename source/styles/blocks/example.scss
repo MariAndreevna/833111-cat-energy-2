@@ -9,6 +9,16 @@
 .example__container {
   padding-top: 25px;
   padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
+    padding-bottom: 101px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 75px;
+  }
 }
 
 .example__title {
@@ -20,7 +30,11 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 20px 0 60px;
+    margin: 0 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 76px;
   }
 }
 
@@ -29,12 +43,12 @@
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
-  margin: 0 0 20px;
+  margin: 0 0 21px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 0 0 55px;
+    margin: 0 0 54px;
   }
 }
 
@@ -61,14 +75,14 @@
   font-size: 24px;
   text-align: center;
   border: 1px solid $special_grey;
-  border-radius: 5px;
-  padding: 14px;
+  border-radius: 2px;
+  padding: 15px;
   width: 124px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    padding: 17px 2px;
+    padding: 13px 2px 20px;
     width: 162px;
   }
 }
@@ -82,8 +96,8 @@
   display: block;
   padding: 0 12px;
   background-color: $dark-grey;
-  margin: -8px auto 0;
-  width: 77px;
+  width: 88px;
+  margin: -10px auto 0;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -103,7 +117,7 @@
 
 .example__expenses {
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
@@ -114,9 +128,13 @@
 
   @media (min-width: $tablet-width) {
     text-align: right;
-    width: 174px;
     font-size: 20px;
     line-height: 20px;
-    margin: 10px 0 0 auto;
+    margin: 11px 0 0 auto;
+
+    & span {
+      display: block;
+      margin-top: 10px;
+    }
   }
 }

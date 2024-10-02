@@ -23,7 +23,7 @@
     height: 2px;
     background-color: $basic-green;
     position: absolute;
-    top: 50%;
+    top: 37%;
   }
 
   @media (max-width: $tablet-width) {
@@ -52,13 +52,12 @@
 
 .newsletter__description {
   text-align: center;
-  margin: 0 0 24px;
+  margin: 0 auto 23px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 32px;
-    margin: 0 auto 24px;
-    width: 632px;
+    width: 650px;
   }
 }
 
@@ -66,6 +65,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 38px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .newsletter__form-email {
@@ -78,6 +83,12 @@
   margin-bottom: 16px;
   border: 1px solid $special_grey;
   padding: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 13px;
+    border-right: none;
+  }
 }
 
 .newsletter__form-button {
@@ -85,4 +96,9 @@
   width: 100%;
   font-size: 20px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 16px 69px;
+    width: fit-content;
+  }
 }
