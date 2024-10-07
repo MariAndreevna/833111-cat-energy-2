@@ -26,13 +26,13 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 32px;
   }
-}
 
 .advantages__list {
   font-family: $secondary-font;
   list-style: none;
   margin: 0;
   padding: 0;
+
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -90,6 +90,7 @@
     background-size: 26px 31px;
   }
 
+
   @media (max-width: $tablet-width) {
     & br {
       display: none;
@@ -110,7 +111,6 @@
     padding-top: 33px;
     padding-bottom: 57px;
     padding-right: 70px;
-
 
     &::before {
       width: 80px;

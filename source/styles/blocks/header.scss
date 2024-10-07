@@ -79,7 +79,6 @@
 
 .main-header__toggle {
   @media (max-width: $tablet-width) {
-
     width: 24px;
     height: 24px;
     padding: 0;
@@ -103,6 +102,7 @@
       background-position: center;
       right: 0;
       left: 0;
+
     }
 
     &::before {
